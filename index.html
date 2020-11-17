@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Khoa Huynh | Web Developer</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="khoaHyh portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+
+    <body>
+    <!--Navbar START-->
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#projects">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    <!--Navbar END-->
+    <!--Welcome section START-->
+        <section id="welcome-section" class="welcome-section">
+            <h1 class="welcome_hi">Hi!</h1>
+            <h2 class="welcome_tagline">
+                I'm <strong>Khoa Huynh</strong>, a web developer focused on building beautiful and fluid experiences.
+            </h2>
+            <h3 class="welcome_contact">
+                <span>Reach me at</span>
+                <span>
+                    <a class="email-link" href="mailto:khoahuynh.toronto@gmail.com" target="_blank" rel="noopener">khoahuynh.toronto@gmail.com</a>
+                </span>
+            </h3>
+        </section>
+    <!--Welcome section END -->
+    <!--Projects section START-->
+        <section id="projects" class="projects-section">
+            <h2 class="projects-section-header">Featured Projects</h2>
+            <p class="projects-section_view-more">Click on the respective tile to view more!</p>
+            <div class="projects-grid">
+                <a href="#responsive" id="project-tile_smart-brain" class="project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/khoaHyh/smart-brain/master/src/images/smart-brain.png" alt="Picture of Full-stack Image Recognition App">
+                    <div class=project-image-description>
+                        <p>Full-stack Image Recognition App</p>
+                    </div>
+                </a> 
+                <a href="#responsive" id="project-tile_EOHE" class="project-tile">
+                    <img class="project-image" src="https://raw.githubusercontent.com/khoaHyh/EOHE/master/fastest-times/PB_khoaHyh.png" alt="Picture of 2D Side Scrolling PC Game">
+                    <div class=project-image-description>
+                        <p>2D Side-scrolling PC Game</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="contact-links">
+                <a id="profile-link" class="btn contact-details" href="https://github.com/khoaHyh" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a class="btn contact-details" href="https://twitter.com/khoaHyh" target="_blank" rel="noopener">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+            </div>
+        </section>
+    <!--Projects section END-->
+    <!--Modal section START-->
+        <div class="bg-modal">
+            <div class="modal-content_smart-brain">
+                <div id="close_smart-brain" class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="modal-project-container-1">
+                    <img class="modal-project-image" src="https://raw.githubusercontent.com/khoaHyh/smart-brain/master/src/images/smart-brain.png">
+                </div>
+                <div class="modal-project-container-2">
+                    <div class="modal-project_label">
+                        <h3>Smart-Brain</h3>
+                    </div>
+                    <ul class="modal-project_technologies">
+                        <li class="modal-project_tech">
+                            HTML & CSS
+                        </li>
+                        <li class="modal-project_tech">
+                            JavaScript
+                        </li>
+                        <li class="modal-project_tech">
+                            React.js
+                        </li>
+                        <li class="modal-project_tech">
+                            Node.js
+                        </li>
+                        <li class="modal-project_tech">
+                            PostgreSQL
+                        </li>
+                        <li class="modal-project_tech">
+                            Express.js
+                        </li>
+                        <li class="modal-project_tech">
+                            Clarifai API
+                        </li>
+                    </ul>
+                    <div class="modal-project_about-section">
+                        <h3 class="about-label">About</h3>
+                        <p class="about-description">
+                            This is the final project for the Udemy Course: 'Zero To Mastery' by Andrei Neagoie. The challenge was to create an app that detects faces upon the submission of a link to an image. The project uses the Clarifai Machine Learning Image Recognition API to detect faces. There is also login & register functionality. Each account that signs up has a score that increments for each time the user submits a link that successfully detects a face. That score is stored in a database on a Heroku server so that when the user logs back in, your account score is still there.
+                        </p>
+                    </div>
+                    <a id="modal-demo_smart-brain" class="modal-project_btn" href="https://smart-brain-khoahyh.herokuapp.com/" target="_blank" rel="noopener">
+                        Demo
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a id="modal-code_smart-brain" class="modal-project_btn" href="https://github.com/khoaHyh/smart-brain" target="_blank" rel="noopener">
+                        Code
+                        <i class="fas fa-laptop-code"></i>
+                    </a>        
+                </div>
+            </div>
+            <div class="modal-content_eohe">
+                <div id="close_eohe" class="close">
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="modal-project-container-1">
+                    <img class="modal-project-image" src="https://raw.githubusercontent.com/khoaHyh/EOHE/master/fastest-times/PB_khoaHyh.png">
+                </div>
+                <div class="modal-project-container-2">
+                    <div class="modal-project_label">
+                        <h3>Escape On Hallow's Eve</h3>
+                    </div>
+                    <ul class="modal-project_technologies">
+                        <li class="modal-project_tech">
+                            Lua
+                        </li>
+                        <li class="modal-project_tech">
+                            LÖVE
+                        </li>
+                    
+                    </ul>
+                    <div class="modal-project_about-section">
+                        <h3 class="about-label">About</h3>
+                        <p class="about-description">
+                            Escape On Hallow's Eve was created as a final project for the 'cs50x: Introduction to Computer Science 2020' course. I decided to created a video game because I am an avid player of them and I figured it would be neat to learn what goes into making one! I gave myself a deadline of 2 weeks to complete this project and this is the result of that.
+                        </p>
+                    </div>
+                    <a id="modal-demo_smart-brain" class="modal-project_btn" href="https://www.youtube.com/watch?v=YH7YjZnnVR8&feature=youtu.be" target="_blank" rel="noopener">
+                        Demo
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a id="modal-code_smart-brain" class="modal-project_btn" href="https://github.com/khoaHyh/EOHE" target="_blank" rel="noopener">
+                        Code
+                        <i class="fas fa-laptop-code"></i>
+                    </a>        
+                </div>
+            </div>
+        </div>
+    <!--Modal section END-->
+        <script src="script.js"></script>
+    </body>
+</html>

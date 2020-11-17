@@ -1,0 +1,441 @@
+::selection {
+    background: #FE019A;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', Apercu,"Source Sans Pro", system,system-ui,-apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.nav {
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin-block-start: 0.25rem;
+    margin-block-end: 0.25rem;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.nav-list a:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+    .nav-list a {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+}
+
+.welcome-section {
+    padding: 120px 100px;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+@media screen and (max-width: 630px) {
+    .welcome-section {
+        padding: 120px 70px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .welcome-section {
+        padding: 120px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-section {
+        padding: 70px 50px;
+    }
+}
+
+.welcome_hi, .welcome_tagline {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome_hi, .welcome_tagline {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .welcome_hi, .welcome_tagline {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .welcome_hi, .welcome_tagline {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .welcome_hi, .welcome_tagline {
+        font-size: 1.3rem;
+    }
+}
+
+.welcome_tagline {
+    max-width: 700px;
+}
+
+.welcome_contact {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+    .welcome_contact {
+        font-size: 1rem;
+    }
+}
+
+.email-link {
+    color: #3D7E9A;
+}
+
+.email-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.projects-section h2 {
+    margin-block-end: 0;
+}
+
+.projects-section_view-more {
+    margin-bottom: 4rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 650px) {
+    .projects-section {
+        padding: 6rem 1 rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-tile {
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-out;
+}
+
+.project-tile:hover {
+    transform: scale(1.05, 1.05);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.project-image {
+    height: calc(100% - 3.5rem);
+    width: 100%;
+    object-fit: cover;  
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.project-image-description {
+    width: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    background-color: black;
+    border-radius: 0 0 0.5rem 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-image-description p {
+    font-weight: 450;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .project-image-description p {
+        font-size: 0.75rem;
+    }
+}
+
+.fab {
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    background: white;
+    margin: 0 10px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    margin: 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(-8px);
+}
+
+.bg-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content_smart-brain {
+    position: absolute;
+    margin: 0 auto;
+    max-width: 935px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 3px 3px 20px black;
+    border-radius: 5px;
+    flex-direction: row;
+    display: none;
+}
+
+@media screen and (max-width: 630px) {
+    .modal-content_smart-brain {
+        width: 360px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .modal-content_smart-brain {
+        width: 270px;
+    }
+}
+
+.modal-content_eohe {
+    position: absolute;
+    margin: 0 auto;
+    max-width: 935px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 3px 3px 20px black;
+    border-radius: 5px;
+    flex-direction: row;
+    display: none;
+}
+
+@media screen and (max-width: 630px) {
+    .modal-content_eohe {
+        width: 360px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .modal-content_eohe {
+        width: 270px;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-project-container-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.modal-project-container-2 {
+    width: calc(100% - 20rem);
+    display: inline-block;
+    height: auto;
+    padding:  0.75rem 0.75rem;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-project-container-1 {
+        width: 100%;
+    }
+    
+    .modal-project-container-2 {
+        width: 100%;
+    }
+}
+
+.modal-project-container-2 ul {
+    padding-inline-start: 0;
+}
+
+.modal-project-image {
+    object-fit: contain;
+}
+
+@media screen and (max-width: 630px) {
+    .modal-project-image {
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.modal-project_label h3 {
+    margin: 0.25rem 0;
+}
+
+.modal-project_tech {
+    display: inline-block;
+    margin: 0.15rem;
+    padding: 0.2rem;
+    border: solid 1px #333;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+}
+
+.modal-project_about-section h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.modal-project_about-section p {
+    margin-block-start: 0;
+    padding: 0.25rem 0.5rem;
+    background: #222;
+    color: white;
+}
+
+.about-description {
+    height: 160px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 630px) {
+    .about-description {
+        height: 100px;
+    }
+}
+
+.modal-project_demo, .modal-project_code {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.modal-project_btn {
+    margin: 0.25rem;
+    border-radius: 5px;
+    padding: 0.3rem;
+    padding-bottom: 0.1rem;
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    text-align: center;
+}
+
+.modal-project_btn:hover {
+    background-color: white;
+    color: black;
+}
